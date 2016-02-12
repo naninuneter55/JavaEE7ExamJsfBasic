@@ -1,4 +1,4 @@
-package com.wind_now.wntest.beans;
+package foo.bar;
 
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
