@@ -20,6 +20,8 @@ public class Form {
     private int oneListBox;
     private Map<String, Integer> oneListBoxItems;
     private Integer[] manyListBox;
+    private int oneMenu;
+    private Integer[] manyMenu;
 
     public Form() {
         oneRadioItems = new LinkedHashMap<>();
@@ -79,6 +81,15 @@ public class Form {
         return null;
     }
 
+    public String actionSelectOneMenu() {
+        System.out.println("Select one menu : " + getOneMenu());
+        return null;
+    }
+
+    public String actionSelectManyMenu() {
+        System.out.println("Select many menu : " + Arrays.toString(getManyMenu()));
+        return null;
+    }
     public String getSecret() {
         return secret;
     }
@@ -153,6 +164,22 @@ public class Form {
 
     public void setManyListBox(Integer[] manyListBox) {
         this.manyListBox = manyListBox;
+    }
+
+    public int getOneMenu() {
+        return oneMenu;
+    }
+
+    public void setOneMenu(int oneMenu) {
+        this.oneMenu = oneMenu;
+    }
+
+    public Integer[] getManyMenu() {
+        return manyMenu;
+    }
+
+    public void setManyMenu(Integer[] manyMenu) {
+        this.manyMenu = manyMenu;
     }
 
 

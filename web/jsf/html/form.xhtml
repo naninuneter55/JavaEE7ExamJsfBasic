@@ -57,6 +57,26 @@
                 </h:selectManyListbox>
                 <h:commandButton value="複数選択が可能なリストボックス送信" action="#{form.actionSelectManyListBox()}"/>
 
+                <h:outputText value="１つのみ選択可のドロップダウンリスト"/>
+                <h:selectOneMenu value="#{form.oneMenu}">
+                    <f:selectItem itemValue="0" itemLabel="１つのみ選択可のドロップダウンリスト１"/>
+                    <f:selectItem itemValue="1" itemLabel="１つのみ選択可のドロップダウンリスト２"/>
+                    <f:selectItem itemValue="2" itemLabel="１つのみ選択可のドロップダウンリスト３"/>
+                    <f:selectItem itemValue="3" itemLabel="１つのみ選択可のドロップダウンリスト４"/>
+                    <f:selectItem itemValue="4" itemLabel="１つのみ選択可のドロップダウンリスト５"/>
+                </h:selectOneMenu>
+                <h:commandButton value="１つのみ選択可のドロップダウンリスト送信" action="#{form.actionSelectOneMenu()}"/>
+
+                <h:outputText value="複数選択可のドロップダウンリスト"/>
+                <h:selectManyMenu value="#{form.manyMenu}">
+                    <f:selectItem itemValue="0" itemLabel="複数選択可のドロップダウンリスト１"/>
+                    <f:selectItem itemValue="1" itemLabel="複数選択可のドロップダウンリスト２"/>
+                    <f:selectItem itemValue="2" itemLabel="複数選択可のドロップダウンリスト３"/>
+                    <f:selectItem itemValue="3" itemLabel="複数選択可のドロップダウンリスト４"/>
+                    <f:selectItem itemValue="4" itemLabel="複数選択可のドロップダウンリスト５"/>
+                </h:selectManyMenu>
+                <h:commandButton value="複数選択可のドロップダウンリスト送信" action="#{form.actionSelectManyMenu()}"/>
+
             </h:panelGrid>
         </h:form>
     </h:body>
