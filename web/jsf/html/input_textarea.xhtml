@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>[JSF] 複数行のテキストフィールド</title>
+    </h:head>
+    <h:body>
+        <h1>複数行のテキストフィールド</h1>
+        <p>ボタン押下で入力したテキストが標準出力に出力されます。</p>
+        <h:form>
+            <h:inputTextarea value="#{form.textArea}" rows="3" cols="40"/>
+            <h:commandButton value="複数行のテキスト送信" action="#{form.actionInputTextArea()}"/>
+        </h:form>
+        <p><h:link outcome="index" value="戻る"/></p>
+    </h:body>
+</html>
+
