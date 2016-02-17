@@ -9,21 +9,54 @@
         <h1>Facelet のタグ サンプル集</h1>
         <h2>フォーム部品</h2>
         <h:panelGrid columns="3">
+
             <h:outputText value="送信用のコマンドボタン"/>
             <h:outputText value="&lt;h:commmandButton&gt;"/>
             <h:link outcome="command_button" value="サンプル"/>
+
             <h:outputText value="汎用的なコマンドボタン"/>
             <h:outputText value="&lt;h:button&gt;"/>
             <h:link outcome="button" value="サンプル"/>
+
             <h:outputText value="パスワード送信"/>
             <h:outputText value="&lt;h:secret&gt;"/>
             <h:link outcome="secret" value="サンプル"/>
+
             <h:outputText value="１行のみのテキストフィールド"/>
             <h:outputText value="&lt;h:inputText&gt;"/>
             <h:link outcome="input_text" value="サンプル"/>
+
             <h:outputText value="複数行のテキストフィールド"/>
             <h:outputText value="&lt;h:inputTextarea&gt;"/>
             <h:link outcome="input_textarea" value="サンプル"/>
+
+            <h:outputText value="１個のチェックボックス"/>
+            <h:outputText value="&lt;h:selectBooleanCheckbox&gt;"/>
+            <h:link outcome="select_boolean_checkbox" value="サンプル"/>
+            
+            <h:outputText value="複数のチェックボックス"/>
+            <h:outputText value="&lt;h:selectManyCheckbox&gt;"/>
+            <h:link outcome="select_many_checkbox" value="サンプル"/>
+            
+            <h:outputText value="ラジオボタン"/>
+            <h:outputText value="&lt;h:selectOneRadio&gt;"/>
+            <h:link outcome="select_one_radio" value="サンプル"/>
+            
+            <h:outputText value="１項目のみ選択が可能なリストボックス"/>
+            <h:outputText value="&lt;h:selectOneListbox&gt;"/>
+            <h:link outcome="select_one_listbox" value="サンプル"/>
+            
+            <h:outputText value="複数選択が可能なリストボックス"/>
+            <h:outputText value="&lt;h:selectManyListbox&gt;"/>
+            <h:link outcome="select_many_listbox" value="サンプル"/>
+            
+            <h:outputText value="１つのみ選択可のドロップダウンリスト"/>
+            <h:outputText value="&lt;h:selectOneMenu&gt;"/>
+            <h:link outcome="select_one_menu" value="サンプル"/>
+            
+            <h:outputText value="複数選択可のドロップダウンリスト"/>
+            <h:outputText value="&lt;h:selectManyMenu&gt;"/>
+            <h:link outcome="select_many_menu" value="サンプル"/>
             
         </h:panelGrid>
     </h:body>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>[JSF] 複数選択が可能なリストボックス</title>
+    </h:head>
+    <h:body>
+        <h1>複数選択が可能なリストボックス</h1>
+        <p>選択した項目ののvalueの配列が標準出力に出力されます。</p>
+        <h:form>
+            <h:selectManyListbox value="#{form.manyListBox}">
+                <f:selectItem itemValue="0" itemLabel="複数選択が可能なリストボックス１"/>
+                <f:selectItem itemValue="1" itemLabel="複数選択が可能なリストボックス２"/>
+                <f:selectItem itemValue="2" itemLabel="複数選択が可能なリストボックス３"/>
+                <f:selectItem itemValue="3" itemLabel="複数選択が可能なリストボックス４"/>
+                <f:selectItem itemValue="4" itemLabel="複数選択が可能なリストボックス５"/>
+            </h:selectManyListbox>
+            <h:commandButton value="送信" action="#{form.actionSelectManyListBox()}"/>
+        </h:form>
+        <p><h:link outcome="index" value="戻る"/></p>
+    </h:body>
+</html>
+
