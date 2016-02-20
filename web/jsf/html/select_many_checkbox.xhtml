@@ -10,12 +10,12 @@
         <h1>複数のチェックボックス</h1>
         <p>チェックしたチェックボックスのvalueの配列が標準出力に出力されます。</p>
         <h:form>
-            <h:selectManyCheckbox value="#{form.manyCheckBox}">
+            <h:selectManyCheckbox value="#{selectManyCheckbox.selectManyCheckbox}">
                 <f:selectItem itemValue="1" itemLabel="チェックボックス１"/>
                 <f:selectItem itemValue="2" itemLabel="チェックボックス２"/>
                 <f:selectItem itemValue="3" itemLabel="チェックボックス３"/>
             </h:selectManyCheckbox>
-            <h:commandButton value="送信" action="#{form.actionSelectManyCheckBox()}"/>
+            <h:commandButton value="送信" action="#{selectManyCheckbox.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

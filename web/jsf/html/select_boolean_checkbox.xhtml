@@ -9,8 +9,8 @@
         <h1>１個のチェックボックス</h1>
         <p>チェック結果（true/false）が標準出力に出力されます。</p>
         <h:form>
-            <h:selectBooleanCheckbox value="#{form.checkBox}"/>
-            <h:commandButton value="送信" action="#{form.actionSelectCheckBox()}"/>
+            <h:selectBooleanCheckbox value="#{selectBooleanCheckbox.selectBooleanCheckbox}"/>
+            <h:commandButton value="送信" action="#{selectBooleanCheckbox.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

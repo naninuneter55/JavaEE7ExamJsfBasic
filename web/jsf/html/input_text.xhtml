@@ -9,8 +9,8 @@
         <h1>１行のみのテキストフィールド</h1>
         <p>ボタン押下で入力したテキストが標準出力に出力されます。</p>
         <h:form>
-            <h:inputText value="#{form.text}" />
-            <h:commandButton value="送信" action="#{form.actionInputText()}"/>
+            <h:inputText value="#{inputText.inputText}" />
+            <h:commandButton value="送信" action="#{inputText.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

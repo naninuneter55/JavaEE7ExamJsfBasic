@@ -10,14 +10,14 @@
         <h1>１つのみ選択可のドロップダウンリスト</h1>
         <p>選択した項目のvalueが標準出力に出力されます。</p>
         <h:form>
-            <h:selectOneMenu value="#{form.oneMenu}">
+            <h:selectOneMenu value="#{selectOneMenu.selectOneMenu}">
                 <f:selectItem itemValue="0" itemLabel="１つのみ選択可のドロップダウンリスト１"/>
                 <f:selectItem itemValue="1" itemLabel="１つのみ選択可のドロップダウンリスト２"/>
                 <f:selectItem itemValue="2" itemLabel="１つのみ選択可のドロップダウンリスト３"/>
                 <f:selectItem itemValue="3" itemLabel="１つのみ選択可のドロップダウンリスト４"/>
                 <f:selectItem itemValue="4" itemLabel="１つのみ選択可のドロップダウンリスト５"/>
             </h:selectOneMenu>
-            <h:commandButton value="送信" action="#{form.actionSelectOneMenu()}"/>
+            <h:commandButton value="送信" action="#{selectOneMenu.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

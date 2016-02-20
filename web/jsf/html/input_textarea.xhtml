@@ -9,8 +9,8 @@
         <h1>複数行のテキストフィールド</h1>
         <p>ボタン押下で入力したテキストが標準出力に出力されます。</p>
         <h:form>
-            <h:inputTextarea value="#{form.textArea}" rows="3" cols="40"/>
-            <h:commandButton value="複数行のテキスト送信" action="#{form.actionInputTextArea()}"/>
+            <h:inputTextarea value="#{inputTextArea.inputTextArea}" rows="3" cols="40"/>
+            <h:commandButton value="複数行のテキスト送信" action="#{inputTextArea.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

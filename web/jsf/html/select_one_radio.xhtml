@@ -10,12 +10,12 @@
         <h1>ラジオボタン</h1>
         <p>選択したラジオボタンのvalueが標準出力に出力されます。</p>
         <h:form>
-            <h:selectOneRadio value="#{form.oneRadio}">
+            <h:selectOneRadio value="#{selectOneRadio.selectOneRadio}">
                 <f:selectItem itemValue="0" itemLabel="ラジオボタン１"/>
                 <f:selectItem itemValue="1" itemLabel="ラジオボタン２"/>
                 <f:selectItem itemValue="2" itemLabel="ラジオボタン３"/>
             </h:selectOneRadio>
-            <h:commandButton value="送信" action="#{form.actionSelectOneRadio()}"/>
+            <h:commandButton value="送信" action="#{selectOneRadio.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

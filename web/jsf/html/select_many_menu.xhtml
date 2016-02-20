@@ -10,14 +10,14 @@
         <h1>複数選択可のドロップダウンリスト</h1>
         <p>選択した項目ののvalueの配列が標準出力に出力されます。</p>
         <h:form>
-            <h:selectManyMenu value="#{form.manyMenu}">
+            <h:selectManyMenu value="#{selectManyMenu.selectManyMenu}">
                 <f:selectItem itemValue="0" itemLabel="複数選択可のドロップダウンリスト１"/>
                 <f:selectItem itemValue="1" itemLabel="複数選択可のドロップダウンリスト２"/>
                 <f:selectItem itemValue="2" itemLabel="複数選択可のドロップダウンリスト３"/>
                 <f:selectItem itemValue="3" itemLabel="複数選択可のドロップダウンリスト４"/>
                 <f:selectItem itemValue="4" itemLabel="複数選択可のドロップダウンリスト５"/>
             </h:selectManyMenu>
-            <h:commandButton value="送信" action="#{form.actionSelectManyMenu()}"/>
+            <h:commandButton value="送信" action="#{selectManyMenu.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

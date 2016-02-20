@@ -10,14 +10,14 @@
         <h1>１項目のみ選択が可能なリストボックス</h1>
         <p>選択した項目のvalueが標準出力に出力されます。</p>
         <h:form>
-            <h:selectOneListbox value="#{form.oneListBox}">
+            <h:selectOneListbox value="#{selectOneListbox.selectOneListbox}">
                 <f:selectItem itemValue="0" itemLabel="１項目のみ選択可能なリストボックス１"/>
                 <f:selectItem itemValue="1" itemLabel="１項目のみ選択可能なリストボックス２"/>
                 <f:selectItem itemValue="2" itemLabel="１項目のみ選択可能なリストボックス３"/>
                 <f:selectItem itemValue="3" itemLabel="１項目のみ選択可能なリストボックス４"/>
                 <f:selectItem itemValue="4" itemLabel="１項目のみ選択可能なリストボックス５"/>
             </h:selectOneListbox>
-            <h:commandButton value="送信" action="#{form.actionSelectOneListBox()}"/>
+            <h:commandButton value="送信" action="#{selectOneListbox.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>

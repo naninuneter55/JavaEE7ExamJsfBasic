@@ -10,14 +10,14 @@
         <h1>複数選択が可能なリストボックス</h1>
         <p>選択した項目ののvalueの配列が標準出力に出力されます。</p>
         <h:form>
-            <h:selectManyListbox value="#{form.manyListBox}">
+            <h:selectManyListbox value="#{selectManyListbox.selectManyListbox}">
                 <f:selectItem itemValue="0" itemLabel="複数選択が可能なリストボックス１"/>
                 <f:selectItem itemValue="1" itemLabel="複数選択が可能なリストボックス２"/>
                 <f:selectItem itemValue="2" itemLabel="複数選択が可能なリストボックス３"/>
                 <f:selectItem itemValue="3" itemLabel="複数選択が可能なリストボックス４"/>
                 <f:selectItem itemValue="4" itemLabel="複数選択が可能なリストボックス５"/>
             </h:selectManyListbox>
-            <h:commandButton value="送信" action="#{form.actionSelectManyListBox()}"/>
+            <h:commandButton value="送信" action="#{selectManyListbox.action()}"/>
         </h:form>
         <p><h:link outcome="index" value="戻る"/></p>
     </h:body>
